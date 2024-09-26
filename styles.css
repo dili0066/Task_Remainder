@@ -1,0 +1,121 @@
+/* Importing Google Font for stylish typography */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff8a00, #e52e71, #7f00ff); /* Vibrant gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Main container styling */
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Increased shadow */
+    width: 380px;
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #7f00ff; /* Brighter color for title */
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin: 20px 0 10px;
+    font-weight: 600;
+    color: #444; /* Slightly darker for contrast */
+}
+
+/* Styling for dropdowns and input fields */
+select, input[type="time"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #ddd; /* Increased border width */
+    background-color: #f9f9f9;
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+select:focus, input[type="time"]:focus {
+    border-color: #ff8a00; /* Bright border color on focus */
+    box-shadow: 0 0 8px rgba(255, 138, 0, 0.5); /* Bright glow effect */
+}
+
+/* Button styling */
+button {
+    background: linear-gradient(45deg, #ff512f, #dd2476); /* Brighter button gradient */
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s; /* Added box-shadow transition */
+    margin-bottom: 10px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3); /* Increased button shadow */
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ff6a2f, #e93688); /* More vibrant hover effect */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+}
+
+/* Styling for the Stop Alarm button */
+#stopAlarmBtn {
+    background: linear-gradient(45deg, #ff4d4d, #ff1a1a); /* Brighter red */
+}
+
+#stopAlarmBtn:hover {
+    background: linear-gradient(45deg, #ff6666, #ff3333); /* More vibrant hover */
+    transform: translateY(-3px);
+}
+
+/* Input and select hover effect */
+select:hover, input[type="time"]:hover {
+    border-color: #ff8a00;
+}
+
+/* Button disabled state */
+button:disabled {
+    background: linear-gradient(45deg, #ccc, #ddd);
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Styling for small screens */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    button {
+        padding: 12px;
+    }
+
+    select, input[type="time"] {
+        padding: 10px;
+    }
+}
